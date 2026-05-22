@@ -29,6 +29,63 @@ https://www.figma.com/design/JU7SZpXFXa82XmtPyMdSOx/frontend-challenge--NO-BORRA
 
 ## Comentarios en la tarea
 
+> **Francisca (Frontend developer)** — _05-03-2026_
+>
+> _Implementación de la lógica de gestión de favoritos en el listado de propiedades y mejoras en la interfaz de listado de propiedades._
+> _Refactorización del buscador, creado el componente <SearchBar /> a un módulo independiente y creación de su documentación en Storybook._
+> _Sincronización con la maqueta: PropiedadCard, etiquetas de "publicados" y botón de favoritos._
+> _Añadido acceso directo al área privada desde el componente de listado de propiedades para mejorar UX._
+>
+> ---
+>
+> **Francisca (Frontend developer)** — _05-03-2026_
+>
+> _Listado de alquileres a datos dinámicos de la API y optimizar renderizado._
+>
+> - _Sustituir datos mock por datos de la API con listings.service (APIs pública y privada)._
+> - _Implementar 'useMemo' para el filtrado de propiedades y permitir la búsqueda._
+> - _Integración de <PropiedadCard /> para la visualización estandarizada de viviendas._
+> - _Añadir estados de carga, error y manejo de resultados vacíos en la vista de MisAlquileres._
+> - _Refactorizar 'HeroSection' para permitir botones opcionales, mejorando la flexibilidad del componente._
+>
+> ---
+>
+> **Francisca (Frontend developer)** — _05-03-2026_
+>
+> _Creado servicio listing.service.ts para conectar a la API y gestionar el listing de propiedades. Definición de la interfaz 'Listing' y métodos para consultas públicas y privadas (y su búsqueda)._
+> _Mejora de comentarios en auth.service._
+>
+> ---
+>
+> **Francisca (Frontend developer)** — _04-03-2026_
+>
+> - _Continúo trabajando en el diseño._
+> - _He creado el componente PropiedadCard para el listado de propiedades._
+> - _Stories de HeroSection y PropiedadCard para visualizarlos en el Storybook._
+> - _Eliminado css innecesario en mis-alquileres al crear el nuevo componente._
+> - _StarIcon para manejar el icono de favoritos en el PropertyCard._
+>
+> ---
+>
+> **Francisca (Frontend developer)** — _04-03-2026_
+>
+> - _Creo un nuevo componente HeroSection provisional para mejorar el UX/UI del manejo de errores y área privada._
+>
+> ---
+>
+> **Francisca (Frontend developer)** — _28-02-2026_
+>
+> _Empiezo con la tarea._
+> _Programada lógica de autenticación e inicio de sesión. Esto ha implicado:_
+>
+> - _Añadir la librería js-cookie al paquete area-privada para gestionar los tokens de la sesión._
+> - _Servicio authService en auth.service.ts para conectar a la API y validar._
+> - _Contexto AuthContext lógica del usuario utilizando authServices y cookies para la sesión._
+> - _Modificar elementos del formulario login para el uso del contexto._
+> - _AreaPrivadaRouter en index para manejar la navegación en función de la autenticación y añadimos el contexto en el index._
+>
+> ---
+>
 > **Pancho (Frontend developer)** — _15-01-2026_
 >
 > _He dejado ya las vistas de login y el listado de viviendas maquetadas, pero falta integrarlas con la API._

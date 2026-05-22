@@ -1,0 +1,1 @@
+export { PropiedadCard } from "./PropiedadCard";
