@@ -1,0 +1,152 @@
+.mis-alquileres {
+    padding: 2rem;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+/* Barra de búsqueda */
+.mis-alquileres-buscador {
+    display: flex;
+    gap: 0.75rem;
+    align-items: center;
+    margin-bottom: 1.5rem;
+}
+
+.buscador-input {
+    width: 100%;
+    height: 40px;
+    padding: 0 12px;
+    background-color: #fffbf9;
+    border: 1px solid #c2b5ad;
+    border-radius: 5.5px;
+    font-size: 14px;
+    color: #745f51;
+}
+
+.buscador-input::placeholder {
+    color: #c2b5ad;
+}
+
+.buscador-input:focus {
+    outline: none;
+    border-color: #ff5b00;
+}
+
+/* Toolbar: resultados + botón */
+.mis-alquileres-toolbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.5rem;
+}
+
+.resultado-count {
+    margin: 0;
+    font-size: 0.875rem;
+    color: #745f51;
+}
+
+.btn-asociar {
+    background-color: #ff5b00;
+    color: #ffffff;
+    border: none;
+    padding: 0.5rem 1.5rem;
+    border-radius: 999px;
+    font-size: 0.875rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: opacity 0.2s;
+}
+
+.btn-asociar:hover {
+    opacity: 0.9;
+}
+
+/* Grid de propiedades */
+.propiedades-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+}
+
+@media (max-width: 1024px) {
+    .propiedades-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 640px) {
+    .propiedades-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .mis-alquileres {
+        padding: 1rem;
+    }
+}
+
+/* Tarjeta de propiedad */
+.propiedad-card {
+    background: #ffffff;
+    border: 1px solid #e8e1dc;
+    border-radius: 0.5rem;
+    overflow: hidden;
+}
+
+.propiedad-imagen {
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+    background-color: #e8e1dc;
+}
+
+.propiedad-imagen img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.propiedad-info {
+    padding: 1rem;
+}
+
+.propiedad-titulo {
+    font-size: 0.875rem;
+    font-weight: 600;
+    margin: 0 0 0.25rem 0;
+    color: #745f51;
+}
+
+.propiedad-descripcion {
+    font-size: 0.75rem;
+    color: #c2b5ad;
+    margin: 0 0 1rem 0;
+    line-height: 1.4;
+}
+
+/* Footer: badge + precio */
+.propiedad-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.badge-publicado {
+    font-size: 0.75rem;
+    color: #c2b5ad;
+}
+
+.propiedad-precio {
+    margin: 0;
+    font-size: 0.875rem;
+}
+
+.precio-cantidad {
+    font-weight: 700;
+    color: #745f51;
+}
+
+.precio-periodo {
+    font-weight: 400;
+    color: #c2b5ad;
+}

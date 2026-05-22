@@ -1,0 +1,21 @@
+:root {
+    --color-primary: #ff5b00;
+    --color-grey-700: #745f51;
+    --color-grey-300: #c2b5ad;
+    --color-grey-100: #e8e1dc;
+    --color-grey-50: #fffbf9;
+    --color-danger: #ff2d2d;
+}
+
+/* Button */
+:root {
+    --Button--primary--background: var(--color-primary);
+    --Button--primary--color: #ffffff;
+    --Button--primary--border: none;
+    --Button--primary--border-radius: 999px;
+
+    --Button--outline--background: transparent;
+    --Button--outline--color: var(--color-primary);
+    --Button--outline--border: 1px solid var(--color-primary);
+    --Button--outline--border-radius: 999px;
+}

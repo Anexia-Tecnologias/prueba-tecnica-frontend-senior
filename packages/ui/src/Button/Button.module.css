@@ -1,0 +1,22 @@
+/* CSS modules, no global CSS, para evitar conflictos de estilos */
+
+.Button {
+    padding: 10px 32px;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.primary {
+    background: var(--Button--primary--background);
+    color: var(--Button--primary--color);
+    border: var(--Button--primary--border);
+    border-radius: var(--Button--primary--border-radius);
+}
+
+.outline {
+    background: var(--Button--outline--background);
+    color: var(--Button--outline--color);
+    border: var(--Button--outline--border);
+    border-radius: var(--Button--outline--border-radius);
+}
