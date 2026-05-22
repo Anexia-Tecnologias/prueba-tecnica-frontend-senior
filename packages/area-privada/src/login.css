@@ -64,3 +64,8 @@
     height: 41px;
     width: 100%;
 }
+
+.login-error-message {
+    margin-top: 16px;
+    color: var(--color-danger);
+}

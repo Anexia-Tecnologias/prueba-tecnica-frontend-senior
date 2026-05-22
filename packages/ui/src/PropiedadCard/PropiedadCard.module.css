@@ -1,0 +1,145 @@
+/* CSS modules, no global CSS, para evitar conflictos de estilos */
+
+/* Tarjeta de propiedad */
+.propiedad-card {
+    background: #fff;
+    border: 1px solid var(--color-grey-100);
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    display: flex;
+    flex-direction: column;
+}
+
+.propiedad-card:hover {
+    border: 1px solid var(--color-primary);
+}
+
+/* Contenedor de imágenes: 1 grande y 2 pequeñas a la derecha */
+.propiedad-galeria {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    grid-template-rows: repeat(2, 100px);
+    gap: 8px;
+    padding: 12px;
+    position: relative;
+}
+
+.main-image-container {
+    grid-row: span 2;
+}
+
+.main-image-container img,
+.thumb-image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+.fav-button {
+    /*Posición */
+    width: 36px;
+    height: 36px;
+    position: absolute;
+    top: 8px;
+    right: 12px;
+
+    /* Estilo visual */
+    background: #ffffff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    cursor: pointer;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    opacity: 1;
+    z-index: 10;
+    padding: 0;
+    transition: transform 0.2s ease;
+}
+
+.fav-button.active {
+    background-color: var(--color-primary);
+}
+
+.fav-button:hover {
+    transform: scale(1.1);
+}
+
+.fav-button svg {
+    width: 22px;
+    height: 22px;
+}
+
+.propiedad-info {
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.propiedad-titulo {
+    font-size: 0.875rem;
+    font-weight: 600;
+    margin: 0 0 0.25rem 0;
+    color: var(--color-grey-700);
+}
+
+.propiedad-descripcion {
+    font-size: 0.75rem;
+    color: var(--color-grey-300);
+    margin: 0 0 1rem 0;
+    line-height: 1.4;
+    /* Limitar a 3 líneas (Francisca) */
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+/* Footer: badge + precio */
+
+.propiedad-footer {
+    margin-top: 12px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.bagde-container {
+    background-color: var(--color-grey-300);
+    padding: 4px 12px;
+    border-radius: 20px;
+}
+
+.badge-publicado {
+    font-size: 0.75rem;
+    color: var(--color-grey-300);
+    background-color: var(--color-grey-50);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 4px 16px;
+    border-radius: 50px;
+    font-weight: 500;
+    line-height: 1;
+}
+
+.propiedad-precio {
+    margin: 0;
+    font-size: 0.875rem;
+}
+
+.precio-cantidad {
+    font-weight: 700;
+    color: var(--color-grey-700);
+}
+
+.precio-periodo {
+    font-weight: 400;
+    color: var(--color-grey-300);
+}
